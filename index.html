@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>nomologos demo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="scripts/game.js"> </script>
+    <script type="text/javascript" src="scripts/p5.min.js"></script>
+    <script type="text/javascript" src="scripts/utility.js"></script>
+    <script type="text/javascript" src="scripts/colors.js"></script>
+    <script type="text/javascript" src="scripts/constants.js"></script>
+    <script type="text/javascript" src="scripts/models/obstacle.js"></script>
+    <script type="text/javascript" src="scripts/models/path.js"></script>
+    <script type="text/javascript" src="scripts/models/timer.js"></script>
+    <script type="text/javascript" src="scripts/models/hurdle.js"></script>
+    <script type="text/javascript" src="scripts/models/sphere.js"></script>
+    <script type="text/javascript" src="scripts/models/wall.js"></script>
+    <script type="text/javascript" src="scripts/models/coin.js"></script>
+    <script type="text/javascript" src="scripts/models/clock.js"></script>
+    <script type="text/javascript" src="scripts/models/puzzle.js"></script>
+    <script type="text/javascript" src="scripts/models/heart.js"></script>
+    <script type="text/javascript" src="scripts/models/semantics.js"></script>
+    <script type="text/javascript" src="scripts/models/signifier.js"></script>
+    <script type="text/javascript" src="scripts/models/minigame.js"></script>
+
+    <style media="screen">
+      body{
+        padding: 0;
+        margin: 0;
+        background-color: rgb(53,53,53);
+      }
+
+      h1{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 50px;
+        color: #FAFA9B;
+      }
+
+      .main{
+        display: flex;
+        justify-content: center;
+        padding-left: 2%;
+        padding-right: 2%;
+      }
+      .head{
+        display: flex;
+        justify-content: center;
+      }
+      .controls{
+        margin-top: 0;
+        margin-left: 5px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        color: #FAFA9B;
+      }
+      .controls em{
+        color: #47baec;
+        font-style: normal;
+      }
+    </style>
+
+
+  </head>
+
+  <body>
+    <div class="head">
+      <h1> nomologos demo </h1>
+    </div>
+    <div class="main">
+      <div id="canvasPosition"> </div>
+      <div class="controls">
+        <p> <em><u>controls</u></em> </p>
+        <p> <em>tab</em> : stop/start camera movement </p>
+        <p> <em>left click</em> : pan/tilt camera </p>
+        <p> <em>right click</em> : track camera </p>
+        <p> <em>mouse wheel</em> : zoom </p>
+        <p> <em>return</em> : screen shot </p>
+        <p> <em>refresh</em> : reseed level </p>
+      </div>
+    </div>
+  </body>
+</html>
